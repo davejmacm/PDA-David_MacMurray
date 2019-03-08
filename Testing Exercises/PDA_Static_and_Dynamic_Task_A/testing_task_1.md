@@ -22,9 +22,9 @@ class CardGame
 
   dif highest_card(card1 card2) # no comma separating arguments, declared function with dif --- should be def
   if card1.value > card2.value
-    return card.name # should be card1.name
+    return card.name # there is no name data associated with card; should be card1.value
   else
-    card2 #perhaps card2.name would keep code consistent
+    card2 #perhaps card2.value would keep code consistent
   end
 end
 end #orphaned end --- should be after the below method

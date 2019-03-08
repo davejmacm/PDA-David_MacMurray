@@ -12,7 +12,7 @@ require_relative('card.rb')
 class CardGame
 
 
-  def checkforAce(card)
+  def checkforAce(card) # inconsistent function naming; methods below are snake case and this is incorrect camel case
     if card.value = 1
       return true
     else
@@ -20,20 +20,20 @@ class CardGame
     end
   end
 
-  dif highest_card(card1 card2)
+  dif highest_card(card1 card2) # no comma separating arguments, declared function with dif --- should be def
   if card1.value > card2.value
-    return card.name
+    return card.name # should be card1.name
   else
-    card2
+    card2 #perhaps card2.name would keep code consistent
   end
 end
-end
+end #orphaned end --- should be after the below method
 
 def self.cards_total(cards)
   total
   for card in cards
-    total += card.value
-    return "You have a total of" + total
+    total += card.value # this will total up all respective values of the cards i.e. 8 + 4 etc rather than the count of cards
+    return "You have a total of" + total # ? does this need to puts rather than return ?
   end
 end
 
